@@ -49,11 +49,12 @@ public static JSONObject getHttpResponseJson(String url,Map<String,String> param
         }
         return jsonObject;
         
-        ##public static void main(String[] args) {
-		Map paraMap = new HashMap<>();
-	  paramMap.put("key1","value1");
-    paramMap.put("key2","value2");
-    paramMap.put("key3","value3");
-		JSONObject jsonObject = getHttpResponseJson("url", paraMap);
-		System.out.println(jsonObject);
+        ##
+public static void main(String[] args) {
+	Map paraMap = new HashMap<>();
+	paramMap.put("key1","value1");
+	paramMap.put("key2","value2");
+	paramMap.put("key3","value3");
+	JSONObject jsonObject = getHttpResponseJson("url", paraMap);
+	System.out.println(jsonObject);
 	}
