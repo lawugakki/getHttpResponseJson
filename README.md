@@ -1,6 +1,6 @@
 # getHttpResponseJson
-##在调用第三方接口的时候,使用的一个方法, 使用httpclient去发送post请求
-###
+## 在调用第三方接口的时候,使用的一个方法, 使用httpclient去发送post请求
+
 public static JSONObject getHttpResponseJson(String url,Map<String,String> param){
         CloseableHttpClient httpclient = null;
         CloseableHttpResponse response = null;
@@ -49,7 +49,7 @@ public static JSONObject getHttpResponseJson(String url,Map<String,String> param
         }
         return jsonObject;
         
-        ##
+      
 public static void main(String[] args) {
 	Map paraMap = new HashMap<>();
 	paramMap.put("key1","value1");
