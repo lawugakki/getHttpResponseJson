@@ -1,11 +1,11 @@
 # getHttpResponseJson
 ## 在调用第三方接口的时候,使用的一个方法, 使用httpclient去发送post请求
 
+
 public static JSONObject getHttpResponseJson(String url,Map<String,String> param){
         CloseableHttpClient httpclient = null;
         CloseableHttpResponse response = null;
         JSONObject jsonObject = null;
-        
         try {
             //请求发起客户端
             httpclient = HttpClients.createDefault();
@@ -22,8 +22,7 @@ public static JSONObject getHttpResponseJson(String url,Map<String,String> param
             response = httpclient.execute(post);
             HttpEntity valueEntity = response.getEntity();
             String content = EntityUtils.toString(valueEntity);
-            jsonObject = JSONObject.fromObject(content);
-            
+            jsonObject = JSONObject.fromObject(content);            
             return jsonObject;
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
